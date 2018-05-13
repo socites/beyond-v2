@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('template/font/Montserrat-Regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Montserrat', Montserrat, sans-serif !important;
+    overflow: hidden;
+    user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+}
+
+body>.topbar {
+    display: none;
+}
+
+body>.topbar.ios {
+    display: block;
+    top: 0;
+    height: 20px;
+    left: 0;
+    right: 0;
+    background: #cca33d;
+}
+
+body>.app-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.47);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.47);
+}
+
+body>.app-container.ios {
+    top: 20px;
+}
+
+.loading-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    padding-left: 16px;
+    line-height: 64px;
+    background: #66521f;
+    font-size: 16px;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+}
+
+.loading-header .icon {
+    height: 30px;
+    width: 100px;
+    margin-right: 5px;
+}
+
+paper-toolbar .title {
+    font-size: 16px !important;
+}
+
+@media (max-width: 600px) {
+    .loading-header {
+        height: 56px;
+        line-height: 56px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    body {
+        background: #333;
+    }
+    body>.app-container {
+        top: 30px;
+        right: 30px;
+        bottom: 30px;
+        left: 30px;
+    }
+}
