@@ -51,6 +51,10 @@ body > .app-container.ios {
     -webkit-font-smoothing: antialiased;
 }
 
+paper-toolbar .title {
+    font-size: 16px !important;
+}
+
 @media (max-width: 600px) {
     .loading-header {
         height: 56px;

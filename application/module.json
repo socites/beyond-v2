@@ -1,4 +1,7 @@
 {
+  "start": {
+    "js": "routing.js"
+  },
   "page": {
     "route": "/default",
     "template": "pages.templates.Basic",
