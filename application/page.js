@@ -1,5 +1,4 @@
-function Page($container) {
-
+function Page() {
 
     this.template.render({
         'texts': {'title': 'My First Page!'}
