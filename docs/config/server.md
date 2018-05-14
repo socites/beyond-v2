@@ -1,10 +1,31 @@
-# Uso del Server.json
+# Server.json
 
-El JSON del servidor contiene los siguientes campos:
+Represents the Server configuration.
 
-## "ports"
-   
-Define los puertos donde se va a levantar la aplicacion dentro de su propio objeto
+## Description
+
+The server.json is an object containing several properties of the server:
+
+| Property | Type | Required | Description |
+|:-:|:-:|:-:|:-:|
+|`ports`|Object||Contains data for the ports used to access the application|
+|`paths`|Object||Contains data for the routes used in the application|
+|`types`|Array||Contains a list of the routes where the beyond types are defined|
+|`applications`|Object||Contains data for the routes of the applications|
+|`libraries`|Object||Contains data for the routes of the libraries used in the applications|
+|`defaults`|Object||Contains data for the default values for several properties of the application|
+|`services`|Object||
+
+---
+
+Each object has its own properties, described in the following tables
+
+## Ports
+
+| Property | Type | Required | Description |
+|:-:|:-:|:-:|:-:|
+| `http` |`String`| Yes |  |
+| `rpc` |`String`| Yes | |
 
     {"ports":
         {
@@ -13,8 +34,12 @@ Define los puertos donde se va a levantar la aplicacion dentro de su propio obje
         }
     }
 
-## "paths"
-Define las rutas del contenido del proyecto
+## Paths
+
+| Property | Type | Required | Description |
+|:-:|:-:|:-:|:-:|
+| {{name}} | `String` | No | Name and location of the path. `name` can be any string. |
+
 
     {"paths":
         {
@@ -23,15 +48,17 @@ Define las rutas del contenido del proyecto
         }
     }
 
-## "types"
-Define una lista de rutas donde se encuentran los generadores y procesadores de los tipos usados por beyond
+## Types
 
     {"types":[
         "./node_modules/beyond/types"
     ]}
 
 ## "applications"
-Define las rutas donde se encuentra el application.json de las aplicaciones alojadas en el servidor
+
+| Property | Type | Required | Description |
+|:-:|:-:|:-:|:-:|
+| {{name}} | `String` | No | Name and location of the path. `name` must be the name of a registered application. |
 
     {"applications":
         {
@@ -43,7 +70,10 @@ Define las rutas donde se encuentra el application.json de las aplicaciones aloj
     }
 
 ## "libraries"
-Define las rutas donde se encuentra el library.json de las distintas librerias de plugins usadas por las aplicaciones del servidor
+
+| Property | Type | Required | Description |
+|:-:|:-:|:-:|:-:|
+| {{name}} | `String` | No | Name and location of the path. `name` must be the name of a registered library. |
 
     {"libraries":
         {
@@ -55,7 +85,10 @@ Define las rutas donde se encuentra el library.json de las distintas librerias d
     }
 
 ## "defaults"
-Define los valores por defecto de distintas variables, como por ejemplo la aplicacion a la que redireccionara por defecto, o el idioma que va a mostrar
+
+| Property | Type | Required | Description |
+|:-:|:-:|:-:|:-:|
+| {{name}} | `String` | No | Name and location of the path. `name` must be the name of one of the properties. |
 
     {"defaults":
         {
@@ -65,3 +98,7 @@ Define los valores por defecto de distintas variables, como por ejemplo la aplic
     }
 
 ## "services"
+
+| Property | Type | Required | Description |
+|:-:|:-:|:-:|:-:|
+| | | | |
