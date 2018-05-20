@@ -1,0 +1,20 @@
+{
+  "type": "code",
+  "standalone": true,
+  "multilanguage": false,
+  "js": [
+    "system/collection.js",
+    "system/coordinate.js",
+    "system/delegate.js",
+    "system/events.js",
+    "libraries/library.js",
+    "libraries/libraries.js",
+    "modules/module/module.js",
+    "modules/modules.js",
+    "static/static.js",
+    "application/trusted-domains.js",
+    "application/application.js",
+    "ready.js",
+    "beyond.js"
+  ]
+}
