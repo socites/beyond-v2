@@ -9,7 +9,6 @@
     "system/events.js",
     "libraries/library.js",
     "libraries/libraries.js",
-    "modules/module/types/languages.js",
     "modules/module/types/type.js",
     "modules/module/types/types.js",
     "modules/module/module.js",
