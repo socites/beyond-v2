@@ -11,6 +11,7 @@
     "libraries/libraries.js",
     "modules/module/types/type.js",
     "modules/module/types/types.js",
+    "modules/module/base.js",
     "modules/module/module.js",
     "modules/modules.js",
     "static/static.js",
