@@ -15,7 +15,6 @@
     "modules/module/module.js",
     "modules/modules.js",
     "static/static.js",
-    "application/trusted-domains.js",
     "application/application.js",
     "ready.js",
     "beyond.js"
